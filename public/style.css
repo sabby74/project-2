@@ -2,5 +2,12 @@ body{
     background-color: rgba(237, 39, 128, 0.952);
 }
 h1{
-    color: rgb(237, 191, 222)
+    color: rgb(19, 227, 203)
+    
+}
+.signup{
+    background-color: rgb(14, 92, 83);
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
 }
