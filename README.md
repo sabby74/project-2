@@ -1,5 +1,5 @@
 #  PROJECT NAME :
-## Project 2 (Despatch Log)
+## Project 2 (Sabby's Online Store!)
 
 ## Below is the Link to Trello Board :
 
@@ -7,7 +7,7 @@
 
 # Project Main Image :
 
-![MAIN PAGE](https://www.dfupublications.com/images/2021/09/22/Imports-of-denim-garments-from-the-United-States-increased-in-July-of-this-year_large.jpg)
+![MAIN PAGE](https://t3.ftcdn.net/jpg/03/77/85/44/360_F_377854446_cciGJ5NRvNB7JybUtADD8VBItHzp3AwV.jpg)
 
 ## Wire Frame :
 
