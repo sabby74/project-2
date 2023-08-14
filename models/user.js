@@ -8,7 +8,9 @@ const userSchema = new mongoose.Schema({
   name: String,
   username: String,
   password: String,
-});
+},
+{ timestamps: true }
+);
 
 //set up model using schema
 
