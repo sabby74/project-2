@@ -3,7 +3,7 @@ const app= express();
 const mongoose = require("mongoose")//import mongoose
 require("dotenv").config() // Load ENV Variables
 const expressLayouts = require("express-ejs-layouts");
-const User =require("./models/user")
+const authRoutes =require("./controllers/authController")
 
 
 app.set("view engine", "ejs");
@@ -43,41 +43,8 @@ app.get("/", (req, res) => {
     res.render("home.ejs")
   });
 
-
-
-app.get("/login", (req,res)=>{
-  res.render("auth/login")
-})
-
-
-app.post("/login",async (req,res) =>{
-  console.log(req.body);
-  let userToLogin = await User.findOne({username: req.body.username })
-  //just to compare the passwords entered with req.body
-  if(userToLogin){
-    if(userToLogin.password === req.body.password){
-      res.send('you are logged in')
-    }else{
-      res.send("incorrect password")
-    }
-  }
-  
-})
-
-
-app.post("/signup",async (req,res) =>{
-  console.log(req.body);
-  if(req.body.username && req.body.password){
-  let newUser = await User.create(req.body)
-  res.send(newUser) 
-  }
-  
-})
-
-
-app.get("/signup", (req,res)=>{
-  res.render("auth/signup")
-})
+// anywhere below middlewares
+app.use(authRoutes);
 
 
   
