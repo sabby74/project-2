@@ -32,8 +32,10 @@ mongoose.connection
 .on("error", (error) => console.log(error))
 
 
+
+
 app.get("/", (req, res) => {
-    res.render("layout.ejs")
+    res.render("home.ejs")
   });
 
 
@@ -42,6 +44,10 @@ app.get("/", (req, res) => {
 
 
   
+
+
+
+
 
 //port setup 
 const PORT = process.env.PORT

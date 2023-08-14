@@ -1,9 +1,6 @@
 body{
-    background-color: rgba(229, 225, 122, 0.952);
+    background-color: rgba(237, 39, 128, 0.952);
 }
-img{
-    height: 50vw;
-    padding: 40px;
-    margin: 50px;
-
+h1{
+    color: rgb(237, 191, 222)
 }
