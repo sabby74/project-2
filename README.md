@@ -1,5 +1,5 @@
 #  PROJECT NAME :
-## Project 2 (Sabby's Online Store!)
+## Project 2 (Soumya's Online Store!)
 
 ## Below is the Link to Trello Board :
 
@@ -13,7 +13,7 @@
 
 ![alt text](image/wireframe.jpg)
 
-# Title : " Despatch Log ! "
+# Title : " Soumya's Online Store! "
 
 # Table Of Content:
 

@@ -17,15 +17,16 @@ app.use(expressLayouts);
 app.use(express.urlencoded({ extended: true }));
 
 
+//================******************************=============================
 
-//database parser to connect to mongoose DB
+//             database parser to connect to mongoose DB
 const DATABASE_URL = process.env.DATABASE_URL
 const CONFIG = {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-  }
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}
 
-  // Establish Connection
+// Establish Connection
 mongoose.connect(DATABASE_URL, CONFIG)
 
 // Events for when connection opens/disconnects/errors
@@ -34,6 +35,7 @@ mongoose.connection
 .on("close", () => console.log("Disconnected from Mongoose"))
 .on("error", (error) => console.log(error))
 
+//================******************************=============================
 
 
 
