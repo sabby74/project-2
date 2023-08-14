@@ -1,11 +1,11 @@
 const express = require("express") // import express
+const app= express();
 const mongoose = require("mongoose")//import mongoose
 require("dotenv").config() // Load ENV Variables
 const expressLayouts = require("express-ejs-layouts");
+const User =require("./models/user")
 
 
-
-const app= express();
 app.set("view engine", "ejs");
 
 

@@ -1,5 +1,5 @@
 //bring in mongoose thats connected to our MongoDatabase
-const mongoose = require("../db/connection");
+const mongoose = require("mongoose");
 
 
 
