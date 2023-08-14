@@ -40,7 +40,13 @@ app.get("/", (req, res) => {
 
 
 
+app.get("/login", (req,res)=>{
+  res.render("auth/login")
+})
 
+app.get("/signup", (req,res)=>{
+  res.render("auth/signup")
+})
 
 
   
