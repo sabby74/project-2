@@ -13,6 +13,9 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(expressLayouts);
 
+//with express.urlencoded we can use form data
+app.use(express.urlencoded({ extended: true }));
+
 
 
 //database parser to connect to mongoose DB
@@ -43,6 +46,19 @@ app.get("/", (req, res) => {
 app.get("/login", (req,res)=>{
   res.render("auth/login")
 })
+
+
+app.post("/login", (req,res) =>{
+  console.log(req.body);
+  res.send(req.body)
+})
+
+
+app.post("/signup", (req,res) =>{
+  console.log(req.body);
+  res.send(req.body)
+})
+
 
 app.get("/signup", (req,res)=>{
   res.render("auth/signup")
