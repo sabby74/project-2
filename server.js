@@ -32,6 +32,7 @@ app.use(express.urlencoded({ extended: true }));
 //================******************************=============================
 
 //             database parser to connect to mongoose DB
+
 const DATABASE_URL = process.env.DATABASE_URL;
 const CONFIG = {
   useNewUrlParser: true,
@@ -39,15 +40,17 @@ const CONFIG = {
 
 };
 
-// Establish Connection
-mongoose
-  .connect(DATABASE_URL, CONFIG)
-  .then(() => {
+async function connectToDatabase() {
+  try {
+    await mongoose.connect(DATABASE_URL, CONFIG);
     console.log('Now Connected to MongoDB');
-  })
-  .catch((error) => {
+  } catch (error) {
     console.error('Error connecting to MongoDB:', error);
-  });
+  }
+}
+
+// Call the async function to connect
+connectToDatabase();
 
 // Events for when connection opens/disconnects/errors
 mongoose.connection
