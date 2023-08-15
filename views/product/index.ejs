@@ -1,11 +1,11 @@
 
 
 
-
+<div class="productcontainer">
             <% products.forEach( product => { %>
     <img class="proimg" src="<%= product.image %>" alt="<%= product.name %>">
 <h1>
-        category: <%=  product.name %>
+        Category: <%=  product.name %>
     </h1> 
     <h2>
         Fabric: <%= product.fabric %>
@@ -24,12 +24,13 @@
     </h2>
 
         <h2>
-            Ready to ship:  <%= product.isReadyToShip ? "yes" : "No" %>
+            Ready to ship:  <%= product.isReadyToShip ? "yes" : "No" %> 
           </h2>
    
    
 
     <% }) %>
+</div>
 
        
 
