@@ -5,6 +5,7 @@ require("dotenv").config() // Load ENV Variables
 const expressLayouts = require("express-ejs-layouts");
 const authRoutes =require("./controllers/authController")
 const session = require("express-session")
+const productRoutes = require("./controllers/productcontroller")
 
 
 app.set("view engine", "ejs");
@@ -70,15 +71,13 @@ app.use((req, res, next) => {
   next();
 });
 
+app.use("/product", productRoutes);
 
 
 
 
 
 
-app.get("/product", (req,res) =>{
-  res.render("product/index.ejs")
-})
 
 
 

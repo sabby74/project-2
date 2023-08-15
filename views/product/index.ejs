@@ -6,11 +6,14 @@ class="src"
 />
 
 
-<% [{name: "Jeans"}, { name: "Shirts"}, { name: "Trousers"}].forEach( product => { %>
+<% products.forEach( product => { %>
 
 <h1>
     <%= product.name %>
  </h1> 
+ <p>
+    <%= product.description %>
+ </p>
 
 
 
