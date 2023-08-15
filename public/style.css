@@ -5,6 +5,15 @@ h1{
     color: rgb(19, 227, 203)
     
 }
+#nav {
+    display: flex;
+    border-radius: 15px;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: rgb(220, 154, 207);
+    margin: 20px;
+    padding: 40px
+  }
 .signup{
     border-radius: 20px;
     background-color: rgb(14, 92, 83);
