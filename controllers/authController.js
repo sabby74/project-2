@@ -15,18 +15,24 @@ router.post("/login",async (req,res) =>{
     let userToLogin = await User.findOne({username: req.body.username })
     //just to compare the passwords entered with req.body
     if(userToLogin){
-      if(userToLogin.password === req.body.password){
-        res.send('you are logged in')
+        bcrypt.compare(req.body.password, userToLogin.password,(err,result) => {
+
+      
+      if(result){
+        req.session.userId = userToLogin._id;
+        req.session.name = userToLogin.name
+        res.redirect('/product')
       }else{
         res.send("incorrect password")
       }
+    })
     }
     
   })
   
   
   router.post("/signup", async (req, res) => {
-    console.log(req.body);
+    // console.log(req.body);
     //hashing a passoword with bcrypt before User.create()
     if (req.body.username && req.body.password) {
       let plainTextPassword = req.body.password;

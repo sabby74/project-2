@@ -1,21 +1,21 @@
-#  PROJECT NAME :
-## Project 2 (Soumya's Online Store!)
+### PROJECT NAME :
+### Project 2 (Soumya's Online Store!)
 
-## Below is the Link to Trello Board :
+### Below is the Link to Trello Board :
 
 [TRELLO BOARD]()
 
-# Project Main Image :
+### Project Main Image :
 
 ![MAIN PAGE](https://t3.ftcdn.net/jpg/03/77/85/44/360_F_377854446_cciGJ5NRvNB7JybUtADD8VBItHzp3AwV.jpg)
 
-## Wire Frame :
+### Wire Frame :
 
 ![alt text](image/wireframe.jpg)
 
-# Title : " Soumya's Online Store! "
+### Title : " Soumya's Online Store! "
 
-# Table Of Content:
+### Table Of Content:
 
 ### .Built with
 
@@ -27,7 +27,7 @@
 
 ### .contact Info
 
-## BUILT WITH( technologies used ):
+### BUILT WITH( technologies used ):
 
 ### 🔘 Node.js
 
@@ -39,7 +39,7 @@
 
 ### 🔘 Javascript
 
-## Dependencies Required:(download dependencies in the terminal using following commands e.g : npm install 'dependency name')
+### Dependencies Required:(download dependencies in the terminal using following commands e.g : npm install 'dependency name')
 
 ### 🔘 bcrypt : npm install bcrypt
 
@@ -59,20 +59,20 @@
 
 ### 🔘 morgan : npm install morgan
 
-## PREREQUISITES (installations needed before you start) :
+### PREREQUISITES (installations needed before you start) :
 
-## Node.js : https://nodejs.dev/en/download/ and follow there documentation
+### Node.js : https://nodejs.dev/en/download/ and follow there documentation
 
-## express : https://expressjs.com/en/starter/installing.html and follow there documentation
+### express : https://expressjs.com/en/starter/installing.html and follow there documentation
 
-## USAGE:
+### USAGE:
 
 ### In this Application you will be able to manage and check the daily Despatch schedule for the consignments to the clients. you would also be able to create/edit/update and delete a client by logging in as a registered user.
 
 ### CONTACT INFO:
 
-### my linkedin profile : https://www.linkedin.com/in/nagpal-dinesh/
+#### my linkedin profile : https://www.linkedin.com/in/nagpal-dinesh/
 
-### facebook : https://www.facebook/username.com
+#### facebook : https://www.facebook/username.com
 
-### youtube channel: https://www.youtube/myusername.com 
+#### youtube channel: https://www.youtube/myusername.com 
