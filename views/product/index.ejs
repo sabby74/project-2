@@ -1,7 +1,7 @@
 
 
-
 <div class="productcontainer">
+    <h1>Available Products</h1>
             <% products.forEach( product => { %>
     <img class="proimg" src="<%= product.image %>" alt="<%= product.name %>">
 <h1>
@@ -24,7 +24,7 @@
     </h2>
 
         <h2>
-            Ready to ship:  <%= product.isReadyToShip ? "yes" : "No" %> 
+            Ready To Ship:  <%= product.isReadyToShip ? "YES" : "COMING SOON" %> 
           </h2>
    
    

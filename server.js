@@ -43,6 +43,7 @@ const CONFIG = {
 
 async function connectToDatabase() {
   try {
+    console.log(DATABASE_URL, "hello");
     await mongoose.connect(DATABASE_URL, CONFIG);
     console.log('Now Connected to MongoDBase');
   } catch (error) {

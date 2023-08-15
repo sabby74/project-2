@@ -39,8 +39,10 @@ h1{
 }
 
 .logbtn{
+    display: flex;
     justify-content: center;
     background-color: blanchedalmond;
+    border-radius: 10px;
     width: 150px;
     padding: 20px;
     margin: 10px;
