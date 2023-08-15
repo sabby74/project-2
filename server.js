@@ -38,6 +38,7 @@ const CONFIG = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 
+
 };
 
 async function connectToDatabase() {

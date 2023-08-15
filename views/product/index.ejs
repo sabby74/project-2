@@ -4,13 +4,31 @@
 
             <% products.forEach( product => { %>
     <img class="proimg" src="<%= product.image %>" alt="<%= product.name %>">
-
-    <h1>
-        <%= product.name %>
+<h1>
+        category: <%=  product.name %>
     </h1> 
     <h2>
-        <%= product.description %>
+        Fabric: <%= product.fabric %>
     </h2>
+    <h2>
+        Description: <%= product.description %>
+    </h2>
+    <h2>
+        Price: $ <%= product.price %>
+    </h2>
+    <h2>
+        Quantity: pcs <%= product.qty %>
+    </h2>
+    <h2>
+        Size: <%= product.size %>
+    </h2>
+
+        <h2>
+            Ready to ship:  <%= product.isReadyToShip ? "yes" : "No" %>
+          </h2>
+   
+   
+
     <% }) %>
 
        
