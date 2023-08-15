@@ -43,7 +43,7 @@ const CONFIG = {
 async function connectToDatabase() {
   try {
     await mongoose.connect(DATABASE_URL, CONFIG);
-    console.log('Now Connected to MongoDB');
+    console.log('Now Connected to MongoDBase');
   } catch (error) {
     console.error('Error connecting to MongoDB:', error);
   }
