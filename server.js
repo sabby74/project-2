@@ -32,21 +32,28 @@ app.use(express.urlencoded({ extended: true }));
 //================******************************=============================
 
 //             database parser to connect to mongoose DB
-const DATABASE_URL = process.env.DATABASE_URL
+const DATABASE_URL = process.env.DATABASE_URL;
 const CONFIG = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 
-}
+};
 
 // Establish Connection
-mongoose.connect(DATABASE_URL, CONFIG)
+mongoose
+  .connect(DATABASE_URL, CONFIG)
+  .then(() => {
+    console.log('Now Connected to MongoDB');
+  })
+  .catch((error) => {
+    console.error('Error connecting to MongoDB:', error);
+  });
 
 // Events for when connection opens/disconnects/errors
 mongoose.connection
-.on("open", () => console.log("Now Connected to MongoDb"))
-.on("close", () => console.log("Disconnected from Mongoose"))
-.on("error", (error) => console.log(error))
+  .on('open', () => console.log('MongoDB connection opened'))
+  .on('close', () => console.log('MongoDB connection closed'))
+  .on('error', (error) => console.error('MongoDB connection error:', error));
 
 //================******************************=============================
 
