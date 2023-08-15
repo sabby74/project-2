@@ -35,7 +35,8 @@ app.use(express.urlencoded({ extended: true }));
 const DATABASE_URL = process.env.DATABASE_URL
 const CONFIG = {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+
 }
 
 // Establish Connection
