@@ -23,20 +23,6 @@ app.use(express.urlencoded({ extended: true }));
 
 
 
-// anywhere below middlewares
-app.use(authRoutes);
-
-
-// define our own middle to check for a loggin user
-// if no user go to login screen
-app.use((req, res, next) => {
-  if (!req.session.userId) {
-    res.redirect("/login");
-    return;
-  }
-
-  next();
-});
 
 
 
@@ -64,15 +50,36 @@ mongoose.connection
 
 
 
+
+// anywhere below middlewares
+app.use(authRoutes);
+
 app.get("/", (req, res) => {
-    res.render("home.ejs")
-  });
+  res.render("home.ejs")
+});
+
+
+// define our own middle to check for a loggin user
+// if no user go to login screen
+app.use((req, res, next) => {
+  if (!req.session.userId) {
+    res.redirect("/login");
+    return;
+  }
+
+  next();
+});
+
+
+
+
 
 
 
 app.get("/product", (req,res) =>{
   res.render("product/index.ejs")
 })
+
 
 
   
