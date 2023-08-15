@@ -7,7 +7,7 @@ h1{
 }
 #nav {
     display: flex;
-    border-radius: 15px;
+    border-radius: 20px;
     justify-content: space-around;
     list-style-type: none;
     background-color: rgb(220, 154, 207);
@@ -21,19 +21,31 @@ h1{
     margin: 50px;
     padding: 20px;
 }
-img{
-    border-radius: 30px;
-    padding: 20px;
-    margin: 80px;
-    height: 450px;
-    width: 800px
+.bodyimg{
+    border-radius: 15px;
+    margin: 100px;
+    height: 80%;
+    width: 80%;
     
 
 }
+
 .logbtn{
     justify-content: center;
     background-color: blanchedalmond;
     width: 150px;
     padding: 20px;
     margin: 10px;
+}
+.proimg{
+    border-radius: 15px;
+    margin: 80px;
+    height: 200px;
+    width: 200px
+
+}
+
+.productitem{
+    flex-grow: 4;
+
 }

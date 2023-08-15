@@ -1,20 +1,17 @@
 
-<img
-src="https://t3.ftcdn.net/jpg/03/77/85/44/360_F_377854446_cciGJ5NRvNB7JybUtADD8VBItHzp3AwV.jpg"
-alt=""
-class="src"
-/>
-
-
-<% products.forEach( product => { %>
-
-<h1>
-    <%= product.name %>
- </h1> 
- <p>
-    <%= product.description %>
- </p>
 
 
 
-<% }) %>
+            <% products.forEach( product => { %>
+    <img class="proimg" src="<%= product.image %>" alt="<%= product.name %>">
+
+    <h1>
+        <%= product.name %>
+    </h1> 
+    <h2>
+        <%= product.description %>
+    </h2>
+    <% }) %>
+
+       
+
