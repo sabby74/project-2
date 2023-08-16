@@ -18,4 +18,15 @@ allButtons.forEach((button) => {
 
 const submit = document.querySelector("#submit")
 
-console.log(submit);
+submit.addEventListener("click", async (e) => {
+    let res = await fetch("/product/order", {
+      method: "POST",
+      body: JSON.stringify(order),
+      headers: {
+        "Content-Type": "application/json",
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+    });
+
+console.log(res);
+})
