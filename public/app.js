@@ -1,6 +1,6 @@
 console.log("hello there, welcome to Soumyas online store. ");
 
-const order= {
+let order= {
     products:[]
 }
 const allButtons= document.querySelectorAll(".addToOrderBtn")
@@ -27,6 +27,13 @@ submit.addEventListener("click", async (e) => {
         // 'Content-Type': 'application/x-www-form-urlencoded',
       },
     });
+    let response = await res.json()
+    if (response) {
+        order = {
+          products: [],
+        };
+        window.location = `/product/order/${response._id}`;
+      }
 
-console.log(res);
+
 })

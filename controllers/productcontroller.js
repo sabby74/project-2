@@ -87,6 +87,7 @@ router.get("/", async (req, res) => {
 
 router.post("/order", async (req,res)=>{
     let products = await Product.find({_id: {$in : req.body.products}})
+    req.body.userId = req.session.userId;
     // console.log(products);
     let total= 0;
     req.body.products.forEach(
