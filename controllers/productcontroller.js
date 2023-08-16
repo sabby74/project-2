@@ -103,7 +103,11 @@ router.post("/order", async (req,res)=>{
 
 router.get("/order/:id", async (req,res)=>{
     const order = await Order.findById(req.params.id)
-    res.json(order)
+    .populate("products")
+    .populate("userId")
+    // res.json(order)
+    res.render("order/show.ejs",{ order })
+
 
 })
 

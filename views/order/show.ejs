@@ -1,0 +1,23 @@
+<h1>Order for <%= order.userId.name %>
+</h1>
+<h3>Total: <%= order.total %>
+</h3>
+
+<% order.products.forEach( product=> {%>
+
+    <div>
+        <p>
+            <%= product.name %> 
+        </p>
+        <p>
+            <%= product.description %>
+        </p>
+        <p>
+            <%= product.price %>
+        </p>
+        <p>
+            <%= product.size %>
+        </p>
+    </div>
+
+    <% }) %>
