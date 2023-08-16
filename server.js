@@ -21,6 +21,7 @@ app.use(session({ secret: 'randomhhskkskkskkskk', cookie: { maxAge: 3600000 }}))
 
 //with express.urlencoded we can use form data
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 
 
@@ -75,14 +76,15 @@ app.get("/", (req, res) => {
 
 // define our own middle to check for a loggin user
 // if no user go to login screen
-app.use((req, res, next) => {
-  if (!req.session.userId) {
-    res.redirect("/login");
-    return;
-  }
 
-  next();
-});
+// app.use((req, res, next) => {
+//   if (!req.session.userId) {
+//     res.redirect("/login");
+//     return;
+//   }
+
+//   next();
+// });
 
 app.use("/product", productRoutes);
 

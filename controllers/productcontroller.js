@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
-const Product = require("../models/product");
+const Product = require("../models/product.js");
+const Order= require("../models/order.js") 
 
 router.get("/", async (req, res) => {
   let products = await Product.find()
@@ -83,5 +84,27 @@ router.get("/", async (req, res) => {
 //   ]);
 //   res.send(seededproducts)
 // });
+
+router.post("/order", async (req,res)=>{
+    let products = await Product.find({_id: {$in : req.body.products}})
+    // console.log(products);
+    let total= 0;
+    req.body.products.forEach(
+        (product)=> 
+        (total += products.find((p) => {
+           return p._id.toString() == product
+        }).price)
+    );
+    req.body.total = total
+    // console.log(req.body);
+    let newOrder = await Order.create(req.body)
+    res.json(newOrder)
+})
+
+router.get("/order/:id", async (req,res)=>{
+    const order = await Order.findById(req.params.id)
+    res.json(order)
+
+})
 
 module.exports = router;
