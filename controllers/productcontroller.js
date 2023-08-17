@@ -119,6 +119,7 @@ router.get("/order", async (req,res) => {
     const orders = await Order.find({userId: req.session.userId})
     .populate("products")
     .populate("userId")
+    console.log(orders);
     res.render("order/index.ejs", { orders })
 })
 

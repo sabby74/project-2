@@ -3,15 +3,15 @@
 
 <% orders.forEach(order=>{ %>
 
-    <h1>Thanks ,  <%= order.userId.name %> , For Placing Your Order,
+    <h1>Thanks  <%= order.userId.name %> , For Placing Your Order.
     </h1>
     <h3>("your order will be delivered in 05 working days.")</h3>
     
+    <h1>Your Order Total is : $ <%= order.total %>
+    </h1>
 
     <% order.products.forEach( product => { %>
 
-        <h1>Your Order Total is : $ <%= order.total %>
-        </h1>
         <div class="ordercontainer">
             <img src="<%= product.image %>" alt="productimage" >
             <h2>
