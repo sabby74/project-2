@@ -22,6 +22,18 @@ h1{
     padding: 100px;
     border: 20px solid rgb(116, 7, 72);
   }
+  .ordercontainer{
+    background-color: rgb(14, 161, 55);
+    text-align: center;
+    border-radius: 20px;
+    margin: 80px;
+    padding: 100px;
+    border: 20px solid rgb(116, 7, 72);
+
+  }
+  #ordertotal{
+    text-align: center;
+  }
 .signup{
     border-radius: 20px;
     background-color: rgb(14, 92, 83);
@@ -34,9 +46,7 @@ h1{
     margin: 100px;
     height: 80%;
     width: 80%;
-    
-
-}
+    }
 
 .logbtn{
     display: flex;

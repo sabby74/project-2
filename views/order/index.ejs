@@ -1,0 +1,43 @@
+
+
+
+<% orders.forEach(order=>{ %>
+
+    <h1>Thanks ,  <%= order.userId.name %> , For Placing Your Order,
+    </h1>
+    <h3>("your order will be delivered in 05 working days.")</h3>
+    
+
+    <% order.products.forEach( product => { %>
+
+        <h1>Your Order Total is : $ <%= order.total %>
+        </h1>
+        <div class="ordercontainer">
+            <img src="<%= product.image %>" alt="productimage" >
+            <h2>
+                Product: <%= product.name %> 
+            </h2>
+            <h2>
+                Fabric: <%= product.fabric %>
+            </h2>
+            <h2>
+                Description: <%= product.description %>
+            </h2>
+           
+            <h2>
+                Price: $ <%= product.price %>
+            </h2>
+            <h2>
+                Quantity: Total number of Pcs <%= product.qty %>
+            </h2>
+            <h2>
+                Size: <%= product.size %>
+            </h2>
+            
+            <h3>(# Order confirmed) </h3>
+            <button id="delete">delete This Order</button>
+        </div>
+
+        <% }) %>
+
+            <% }) %>
