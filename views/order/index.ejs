@@ -36,7 +36,13 @@
             </h2>
             
             <h3>(# Order confirmed) </h3>
-            <button id="delete">delete This Order</button>
+            <a href="/products/<%= product._id %>/edit"><button>Edit Order</button></a>
+            <br>
+
+
+            <form action="/products/<%= product._id %>?_method=DELETE" method="POST">
+              <input type="submit" value="Delete"/>
+            </form>
         </div>
 
         <% }) %>
