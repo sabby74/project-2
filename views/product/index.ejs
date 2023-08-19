@@ -1,10 +1,10 @@
 
 
-<h1>Available Products:</h1>
+
 <% products.forEach( product => { %>
- 
+    
     <div class="productcontainer">
-                
+        <h1>Available Products</h1>
     <img class="proimg" src="<%= product.image %>" alt="<%= product.name %>">
 <h1>
         Category: <%=  product.name %>
@@ -28,18 +28,15 @@
         <h2>
             Ready To Ship:  <%= product.isReadyToShip ? "YES" : "COMING SOON" %> 
           </h2>
-          <div id="addToOrderBtn">
-          <button id="<%= product._id %>" class="addToOrderBtn"><h2> Add To Order</h2></button>
    
+          <div class="addToOrderBtn">
+          <button id="<%= product._id %>" class="addToOrderBtn"> Add To Order</button>
         </div>
         </div>
+        <% }) %>
+        <div class="submitbtn">
+    <button id="submit">Submit Your Order</button>
 
-    <% }) %>
-
-    <div class="submitbtn">
-    <button id="submit"><h1>Submit Your Order</h1></button>
 </div>
-
-
        
 

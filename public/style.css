@@ -102,18 +102,10 @@ h3{
     margin: 50px;
     padding: 20px;
 }
-#submit{
-    display: flex;
-    justify-content: center;
-    background-color: blanchedalmond;
-    border-radius: 10px;
-    width: 400px;
-    padding: 20px;
-    margin: 60px;
-}
+
 .addToOrderBtn{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: blanchedalmond;
     border-radius: 10px;
     width: 400px;
@@ -123,11 +115,13 @@ h3{
 .submitbtn{
     display: flex;
     justify-content: center;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    width: 400px;
+    padding: 05px;
+    margin: 20px;
 }
-.submitbtn h1{
-    color : rgb(14, 92, 83)
 
-}
 #addToOrderBtn{
     display: flex;
     justify-content: center;
