@@ -31,6 +31,10 @@ h1{
     border: 20px solid rgb(116, 7, 72);
 
   }
+  .mainordercontainer{
+    display: flex;
+    justify-content: center;
+  }
   #ordertotal{
     text-align: center;
   }
@@ -72,4 +76,62 @@ h1{
 }
 h2{
     color: white
+}
+h3{
+    color:  rgb(228, 232, 31)
+}
+.editdelbtn{
+    display: flex;
+    justify-content:space-between;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    width: 150px;
+    padding: 20px;
+    margin: 10px;
+    
+
+}
+#deledit{
+    display: flex;
+    justify-content: center;
+}
+.thanks{
+    border-radius: 20px;
+    background-color: rgb(14, 92, 83);
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+}
+#submit{
+    display: flex;
+    justify-content: center;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+    margin: 60px;
+}
+.addToOrderBtn{
+    display: flex;
+    justify-content: center;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    width: 400px;
+    padding: 05px;
+    margin: 20px;
+}
+.submitbtn{
+    display: flex;
+    justify-content: center;
+}
+.submitbtn h1{
+    color : rgb(14, 92, 83)
+
+}
+#addToOrderBtn{
+    display: flex;
+    justify-content: center;
+}
+#addToOrderBtn h2{
+    color: rgb(14, 92, 83);
 }

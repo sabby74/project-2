@@ -2,7 +2,7 @@
 
 
 <% orders.forEach(order=>{ %>
-
+<div class="thanks">
     <h1>Thanks  <%= order.userId.name %> , For Placing Your Order.
     </h1>
     <h3>Below is your order details</h3>
@@ -10,6 +10,20 @@
     
     <h1>Your Order Total is : $ <%= order.total %>
     </h1>
+</div>
+    <br>
+    <div id="deledit">
+    <div class="editdelbtn">
+    <a href="/order/<%= order._id %>/edit"><button>Edit Order</button></a>
+
+    <br>
+
+
+    <form action="/order/<%= order._id %>?_method=DELETE" method="POST">
+      <input type="submit" value="Delete"/>
+    </form>
+</div>
+</div>
 
     <% order.products.forEach( product => { %>
 
@@ -36,13 +50,7 @@
             </h2>
             
             <h3>(# Order confirmed) </h3>
-            <a href="/products/<%= product._id %>/edit"><button>Edit Order</button></a>
-            <br>
-
-
-            <form action="/products/<%= product._id %>?_method=DELETE" method="POST">
-              <input type="submit" value="Delete"/>
-            </form>
+         
         </div>
 
         <% }) %>

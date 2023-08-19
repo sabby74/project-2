@@ -123,4 +123,11 @@ router.get("/order", async (req,res) => {
     res.render("order/index.ejs", { orders })
 })
 
+router.delete("/order", async (req, res) => {
+  const id = req.params.id
+  await Order.findByIdAndRemove(id)
+  res.redirect("order/index.ejs");
+})
+
+
 module.exports = router;
