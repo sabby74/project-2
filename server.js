@@ -5,6 +5,8 @@ require("dotenv").config() // Load ENV Variables
 const expressLayouts = require("express-ejs-layouts");
 const authRoutes =require("./controllers/authController")
 const session = require("express-session")
+const methodoverride= require("method-override")
+app.use(methodoverride("_method"))
 const productRoutes = require("./controllers/productcontroller")
 
 
@@ -12,6 +14,7 @@ app.set("view engine", "ejs");
 
 
 //middlewares 
+
 app.use(express.static("public"));
 app.use(expressLayouts);
 // Use the session middleware
