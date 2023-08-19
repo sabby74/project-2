@@ -137,17 +137,25 @@ h3{
 /*----------------media query-------------------*/
 @media (max-width: 480px){
     .ordercontainer img{
-        height: 150px;
-        width: 150px;
+        height: 100px;
+        width: 100px;
         border-radius: 5px;
       
       }
       body{
         background-color: rgba(237, 39, 128, 0.952);
       }
-      #nav{
-        display: block;
-        background:none
+      .productcontainer{
+        text-align: justify;
+        border: 8px solid rgb(116, 7, 72)
       }
+      .productcontainer img{
+        height: 100px;
+        width: 100px;
+        border-radius: 8px;
+        border: 5px solid gray
+
+      }
+    
 
 }
