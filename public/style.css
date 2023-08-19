@@ -54,12 +54,12 @@ h1{
 
 .logbtn{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     background-color: blanchedalmond;
     border-radius: 10px;
     width: 150px;
     padding: 20px;
-    margin: 10px;
+    margin: 40px;
 }
 .proimg{
     border-radius: 15px;
