@@ -32,6 +32,10 @@ h1{
     border: 15px solid rgb(116, 7, 72);
 
   }
+  .ordercontainer img{
+    border-radius: 10px;
+    border: 5px solid gray;
+  }
   .mainordercontainer{
     display: flex;
     justify-content: center;
@@ -128,4 +132,22 @@ h3{
 
 #addToOrderBtn h2{
     color: rgb(14, 92, 83);
+}
+
+/*----------------media query-------------------*/
+@media (max-width: 800px){
+    .ordercontainer img{
+        height: 150px;
+        width: 150px;
+        border-radius: 5px;
+      
+      }
+      body{
+        background-color: pink;
+      }
+      #nav{
+        display: block;
+        background:none
+      }
+
 }
