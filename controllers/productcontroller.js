@@ -9,6 +9,16 @@ router.get("/", async (req, res) => {
     res.render("product/index.ejs",{ products });
 });
 
+
+//edit route for product
+router.get("/:id/edit", async (req, res) => {
+  const foundProduct = await Product.findById(req.params.id);
+  console.log(foundProduct);
+  res.render("product/edit.ejs", {product: foundProduct} );
+});
+
+
+
 //seeding products
 router.get("/seed", async (req, res) => {
     await Order.deleteMany({});

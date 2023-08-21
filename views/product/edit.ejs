@@ -1,0 +1,18 @@
+
+<div id="editedproduct">
+<form action="/product/<%= product.id %>?_method=PUT" method="POST">
+
+    <input type="text" name="name" value="<%= product.name %>" placeholder="Product name">
+    <input type="text" name="fabric" value="<%= product.fabric %>" placeholder="Fabric Name">
+    <input type="text" name="description" placeholder="Product Description">
+    <input type="text" name="image" placeholder="Image Url">
+    <input type="text" name="price" value="<%= product.price %>" placeholder="Price">
+    <input type="text" name="qty" placeholder="Available Quantity ">
+    <input type="text" name="size" placeholder="Available Sizes e.g S/M/L/XL">
+    <label>
+        Ready To ship:<input type="checkbox" name="isReadyToShip" <%=
+        product.isReadyToShip ? "checked" : "" %> />
+      </label>
+    <button type="submit">Update Product</button>
+</form>
+</div>

@@ -117,6 +117,27 @@ h3{
     margin: 30px;
     border: 10px solid rgb(12, 96, 28);
 }
+#producteditbtn{
+  background-color: blanchedalmond;
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+    margin: 30px;
+    border: 10px solid rgb(12, 96, 28);
+
+}
+#editedproduct{
+  height: 200px;
+  text-decoration: wavy;
+  border-radius: 20px;
+  background-color: rgb(14, 92, 83);
+  text-align: center;
+  margin: 80px;
+  padding: 50px;
+  border: 10px solid rgb(10, 158, 111)
+
+
+}
 .submitbtn{
     display: flex;
     justify-content: space-around;
